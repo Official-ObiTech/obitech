@@ -10,14 +10,14 @@ import SectHeader from "./components/Sect/Header";
 import SectLanguages from "./components/Sect/Languages";
 import SectExperience from "./components/Sect/Experience";
 import SectSkills from "./components/Sect/Skills";
-import SectProjects from "./components/Sect/Projects";
-import SectBlog from "./components/Sect/Blog";
-import SectHireMe from "./components/Sect/HireMe";
-import SectHandle from "./components/Sect/Handle";
-import Footer from "./components/Footer";
+// import SectProjects from "./components/Sect/Projects";
+// import SectBlog from "./components/Sect/Blog";
+// import SectHireMe from "./components/Sect/HireMe";
+// import SectHandle from "./components/Sect/Handle";
+// import Footer from "./components/Footer";
 
 export default function Home() {
-  const isClient = typeof window !== 'undefined';
+  // const isClient = typeof window !== 'undefined';
   const [mounted, setMounted] = useState(false); // To prevent SSR issues
   const { theme, setTheme } = useTheme(); // Assume you have a context that handles theme switching
 
@@ -46,7 +46,7 @@ export default function Home() {
 
   if (!mounted) return null; // Prevent rendering until the component is mounted
 
-  const handleCheckboxChange = (event) => {
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTheme(event.target.checked ? "dark" : "light"); // Update theme based on checkbox state
   };
 
