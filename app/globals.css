@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f2937;
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --background: #0a0a0a;*/
+/*    --foreground: #ededed;*/
+/*  }*/
+/*}*/
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* md:px-24 px-8 py-12 md:py-6 mx-auto */
+
+@layer utilities {
+  .main_container {
+    @apply w-screen dark:bg-slate-900 bg-slate-200 text-gray-800 dark:text-gray-100 font-sans;
+  }
+
+  /* Start About Section */
+  .about_bg {
+    @apply md:pb-20 pb-8 bg-gradient-to-r from-slate-50 dark:from-slate-800 md:from-30% via-pink-200 dark:via-pink-500 via-40% to-purple-400  dark:to-purple-600 paddings backdrop-blur-3xl;
+  }
+
+  .paddings {
+    @apply md:px-24 px-8 py-12 md:py-6 mx-auto;
+  }
+
+  .link {
+    @apply hover:border-b-2 borders rounded-full px-4 font-medium shadow-2xl transition-all duration-300 ease-out;
+  }
+
+  .borders {
+    @apply border-purple-600 dark:border-white;
+  }
+
+  .name {
+    @apply py-3 px-6 border rounded-full borders flex justify-between items-center;
+  }
+
+  /* Normal header */
+  .header {
+    @apply lg:text-5xl text-4xl font-semibold  py-6;
+  }
+ 
+
+  /* Sub-header-text */
+  .sub_header_text {
+    @apply md:text-4xl dark:text-gray-400 text-2xl font-medium text-purple-700;
+  }
+
+  /* Start header css */
+  .header_container {
+    @apply flex items-center md:py-24 py-12 container mx-auto  gap-6;
+  }
+
+   .header_text {
+    @apply md:text-7xl text-4xl font-black tracking-widest font-serif py-6 md:py-8;
+  }
+
+  .ptag_container {
+    @apply flex md:h-20 h-16  items-center md:w-2/5 md:space-x-4 space-x-2;
+  }
+
+  .circles_container {
+    @apply relative rounded-full h-96 w-96 bg-gray-700 items-center lg:flex justify-center hidden;
+  }
+
+  /* End header css */
+
+  /* Start Experience css */
+  .experience_contanier {
+    @apply items-center md:flex justify-center relative py-20 md:py-24 container mx-auto gap-8;
+  }
+  .experience_bg_anim {
+    @apply absolute md:-bottom-10 -right-20 w-96 h-96 rounded-full bg-gradient-to-br from-60% from-purple-600 to-40% to-pink-300 bg_blur hidden md:flex;
+  }
+
+  .Image_contanier {
+    @apply overflow-hidden rounded-full text-center lg:h-80 h-60 w-60 lg:w-80
+  }
+
+  .text_contanier {
+    @apply md:absolute lg:top-[80px] lg:left-[360px] md:left-[160px] lg:text-5xl text-4xl font-semibold mt-10 md:mt-0
+  }
+  /* End Experience css */
+}
+
+/* The switch - the box around the slider */
+.darkmode .switch {
+  display: block;
+  --width-of-switch: 3.1em;
+  --height-of-switch: 1.8em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.2em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.darkmode .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.darkmode .slider_header {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  box-shadow: 0 0 10px #999;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.darkmode .slider_header:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+.darkmode input:checked + .slider_header {
+  background-color: #303136;
+}
+
+.darkmode input:checked + .slider_header:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/*Start  Lan Scroll animation */
+
+.partiner_container {
+  @apply relative w-full  h-32 flex  items-center overflow-hidden;
+}
+
+.partiner_items {
+  @apply md:w-[250px] lg:w-[350px] w-[150px] absolute  left-full lg:text-5xl md:text-4xl text-2xl font-semibold;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -400px;
+  }
+}
+.animation_scrollLeft {
+  animation: scrollLeft 10s infinite linear;
+}
+
+.item1 {
+  animation-delay: calc(10s / 5 * (5 - 1) * -2);
+}
+
+.item2 {
+  animation-delay: calc(10s / 5 * (5 - 2) * -2);
+}
+
+.item3 {
+  animation-delay: calc(10s / 5 * (5 - 3) * -2);
+}
+
+.item4 {
+  animation-delay: calc(10s / 5 * (5 - 4) * -2);
+}
+.item5 {
+  animation-delay: calc(10s / 5 * (5 - 5) * -2);
+}
+
+/*End  Lan Scroll animation */
+
+/* Start blur */
+
+.bg_blur {
+  filter: blur(100px);
+}
+
+/* End blur */
+
+/* Start Web Scrolbar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
+.element {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+  scrollbar-color: transparent transparent;
+}
+
+/* End Web Scrolbar */
