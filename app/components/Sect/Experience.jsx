@@ -1,5 +1,6 @@
 import Image from "next/image";
-import ReusbleButton from "../Reusbal/ReusbleButton";
+import ReusbleButton from "../Reusable/ReusbleButton";
+import { FiArrowDownRight } from "react-icons/fi";
 
 export default function Experience() {
   const stats = [
@@ -22,9 +23,11 @@ export default function Experience() {
           </div>
         </div>
         <div className="lg:w-1/4 space-y-8 z-30">
-          <p className="text_contanier">
+          <p className="text_contanier md:block flex">
             <span className="md:block mr-3">About</span>
-            <span className="md:block">me icon</span>
+            <span className="flex gap-2">
+              Me <FiArrowDownRight className="text-pink-500 md:mt-2" />
+            </span>
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,7 +49,7 @@ export default function Experience() {
             ))}
           </div>
 
-          <ReusbleButton title={"Hire me <span>icon</span>"} />
+          <ReusbleButton title={"Hire Me "} className={"max-sm:w-full "} />
         </div>
       </div>
     </>

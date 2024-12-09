@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import MappedLinks from "./components/MapedLinks";
-import ReusbleButton from "./components/Reusbal/ReusbleButton";
+import ReusbleButton from "./components/Reusable/ReusbleButton";
 import SectHeader from "./components/Sect/Header";
 import SectLanguages from "./components/Sect/Languages";
 import SectExperience from "./components/Sect/Experience";
@@ -17,9 +17,11 @@ import SectSkills from "./components/Sect/Skills";
 // import Footer from "./components/Footer";
 
 export default function Home() {
-  // const isClient = typeof window !== 'undefined';
-  const [mounted, setMounted] = useState(false); // To prevent SSR issues
-  const { theme, setTheme } = useTheme(); // Assume you have a context that handles theme switching
+  // To prevent SSR issues
+  const [mounted, setMounted] = useState(false);
+
+  // Assume you have a context that handles theme switching
+  const { theme, setTheme } = useTheme();
 
   const links = [
     {
@@ -41,13 +43,16 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    setMounted(true); // Once the component is mounted, update the state
+    // Once the component is mounted, update the state
+    setMounted(true);
   }, []);
 
-  if (!mounted) return null; // Prevent rendering until the component is mounted
+  // Prevent rendering until the component is mounted
+  if (!mounted) return null;
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTheme(event.target.checked ? "dark" : "light"); // Update theme based on checkbox state
+    // Update theme based on checkbox state
+    setTheme(event.target.checked ? "dark" : "light");
   };
 
   return (
@@ -60,22 +65,23 @@ export default function Home() {
             </h1>
             <div className="flex gap-8 items-center">
               <div className="hidden lg:flex  ">
-
-              <MappedLinks links={links} />
+                <MappedLinks links={links} />
               </div>
 
               <div className="darkmode ">
                 <label className="switch">
                   <input
                     type="checkbox"
-                    checked={theme === "dark"} // Control the checkbox based on the current theme
-                    onChange={handleCheckboxChange} // Toggle theme when checked
+                    // Control the checkbox based on the current theme
+                    checked={theme === "dark"}
+                    // Toggle theme when checked
+                    onChange={handleCheckboxChange}
                   />
                   <span className="slider_header"></span>
                 </label>
               </div>
 
-              <ReusbleButton title={"Hire Me"} />
+              <ReusbleButton title={"Hire Me"}  />
             </div>
           </div>
 
