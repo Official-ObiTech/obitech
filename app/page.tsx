@@ -13,8 +13,8 @@ import SectSkills from "./components/Sect/Skills";
 // import SectProjects from "./components/Sect/Projects";
 // import SectBlog from "./components/Sect/Blog";
 // import SectHireMe from "./components/Sect/HireMe";
-// import SectHandle from "./components/Sect/Handle";
-// import Footer from "./components/Footer";
+import SectHandle from "./components/Sect/Handle";
+import Footer from "./components/Footer";
 
 export default function Home() {
   // To prevent SSR issues
@@ -128,7 +128,7 @@ export default function Home() {
           className=" dark:bg-slate-900 bg-slate-50   md:px-24 px-8 md:py-24 py-8"
         >
           <SectHireMe />
-        </section>
+        </section> */}
 
         <section
           id="Social Links"
@@ -142,7 +142,7 @@ export default function Home() {
           className=" dark:bg-slate-900 bg-slate-50 py-10   "
         >
           <Footer />
-        </section> */}
+        </section>
       </div>
     </>
   );
