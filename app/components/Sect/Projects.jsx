@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ReusbleButton from "../Reusbal/ReusbleButton";
+
 
 export default function Projects() {
   // const projs = [
@@ -14,7 +14,7 @@ export default function Projects() {
         <h1 className="text-5xl font-semibold">
           My Projects <span>icon</span>
         </h1>
-        <div className="relative w-full  h-20 flex  items-center overflow-hidden font-semibold text-xl">
+        <div className="relative w-full  h-20 md:flex  items-center overflow-hidden font-semibold text-xl">
           <div className=" h-full   border border-gray-500  md:w-[250px] lg:w-[350px] w-[150px] " />
           <div className=" h-full flex items-center justify-center  cursor-pointer  border border-gray-500   md:w-[250px] lg:w-[350px] w-[150px]">
             IOS <br />
@@ -41,7 +41,7 @@ export default function Projects() {
           <div className="h-full   border border-gray-500  md:w-[250px] lg:w-[350px] w-[150px] " />
         </div>
 
-        <div className="flex items-center justify-center gap-14 md:px-24 px-8 ">
+        <div className="md:flex items-center justify-center gap-14 md:px-24 px-8 ">
           <div className="flex justify-center relative">
             <div className="relative group overflow-hidden">
               <div className="w-60 h-60 rounded-full overflow-hidden mt-4">
@@ -94,7 +94,7 @@ export default function Projects() {
             <p className="absolute left-0 font-semibold">May 2024</p>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-14 md:px-24 px-8 ">
+        <div className="md:flex items-center justify-center gap-14 md:px-24 px-8 ">
           <div className="flex justify-center relative">
             <div className="relative group overflow-hidden">
               <div className="w-60 h-60 rounded-full overflow-hidden mt-4">
@@ -148,7 +148,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <ReusbleButton title={" See all Projects <span>icon</span>"} />
+    
       </div>
     </>
   );

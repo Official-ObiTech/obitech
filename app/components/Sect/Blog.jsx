@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ReusbleButton from "../Reusbal/ReusbleButton";
+
 
 export default function Blog() {
   return (
@@ -37,7 +37,7 @@ export default function Blog() {
               <span>icon</span>
             </div>
           </div>
-          <div className="flex space-x-4 ">
+          <div className="md:flex space-x-4 ">
             <div className="border">
               <Image
                 src="/code.webp"
@@ -96,7 +96,7 @@ export default function Blog() {
             </div>
           </div>
 
-          <ReusbleButton title={"All articles <span>icon</span>"} />
+     
         </div>
       </div>
     </>

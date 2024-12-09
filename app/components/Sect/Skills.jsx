@@ -7,7 +7,7 @@ export default function Skills() {
 
   return (
     <>
-      <div className="text-center space-y-6 container mx-auto relative md:px-20 px-4">
+      <div className="text-center space-y-6 container mx-auto relative md:px-20 ">
         <div className="bg_blur_anime" />
         <h1 className="header">
           My Skills <span>icon</span>

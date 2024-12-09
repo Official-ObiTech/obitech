@@ -10,11 +10,12 @@ import SectHeader from "./components/Sect/Header";
 import SectLanguages from "./components/Sect/Languages";
 import SectExperience from "./components/Sect/Experience";
 import SectSkills from "./components/Sect/Skills";
-// import SectProjects from "./components/Sect/Projects";
-// import SectBlog from "./components/Sect/Blog";
-// import SectHireMe from "./components/Sect/HireMe";
+import SectProjects from "./components/Sect/Projects";
+import SectBlog from "./components/Sect/Blog";
+import SectHireMe from "./components/Sect/HireMe";
 import SectHandle from "./components/Sect/Handle";
 import Footer from "./components/Footer";
+import { CgMenuHotdog } from "react-icons/cg";
 
 export default function Home() {
   // To prevent SSR issues
@@ -60,28 +61,31 @@ export default function Home() {
       <div className="main_container space-y-8 !bg-black  ">
         <section className="about_bg ">
           <div className="name">
-            <h1 className="md:text-3xl font-bold text-xl">
+            <h1 className="md:text-3xl text-2xl font-bold">
               <Link href="/">ObiTech</Link>
             </h1>
             <div className="flex gap-8 items-center">
-              <div className="hidden lg:flex  ">
+              <div className="hidden md:flex  ">
                 <MappedLinks links={links} />
-              </div>
 
-              <div className="darkmode ">
-                <label className="switch">
-                  <input
-                    type="checkbox"
-                    // Control the checkbox based on the current theme
-                    checked={theme === "dark"}
-                    // Toggle theme when checked
-                    onChange={handleCheckboxChange}
-                  />
-                  <span className="slider_header"></span>
-                </label>
-              </div>
+                <div className="darkmode ">
+                  <label className="switch">
+                    <input
+                      type="checkbox"
+                      // Control the checkbox based on the current theme
+                      checked={theme === "dark"}
+                      // Toggle theme when checked
+                      onChange={handleCheckboxChange}
+                    />
+                    <span className="slider_header"></span>
+                  </label>
+                </div>
 
-              <ReusbleButton title={"Hire Me"}  />
+                <ReusbleButton title={"Hire Me"} />
+              </div>
+              <div className="md:hidden">
+                <CgMenuHotdog size={24} />
+              </div>
             </div>
           </div>
 
@@ -109,7 +113,7 @@ export default function Home() {
           <SectSkills />
         </section>
 
-        {/* <section
+        <section
           id="My Project"
           className="md:pb-20 pb-8py-12 md:py-6 mx-auto  dark:bg-slate-900 bg-slate-50  "
         >
@@ -128,7 +132,7 @@ export default function Home() {
           className=" dark:bg-slate-900 bg-slate-50   md:px-24 px-8 md:py-24 py-8"
         >
           <SectHireMe />
-        </section> */}
+        </section>
 
         <section
           id="Social Links"
