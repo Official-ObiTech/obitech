@@ -4,8 +4,8 @@ import React from "react";
 import clsx from "clsx";
 
 interface ReusbleButtonType {
-  title: String;
-  className?: String;
+  title: string;
+  className?: string;
 }
 
 const ReusbleButton: React.FC<ReusbleButtonType> = ({ title, className }) => {
