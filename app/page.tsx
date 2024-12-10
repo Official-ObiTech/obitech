@@ -12,7 +12,7 @@ import SectExperience from "./components/Sect/Experience";
 import SectSkills from "./components/Sect/Skills";
 import SectProjects from "./components/Sect/Projects";
 import SectBlog from "./components/Sect/Blog";
-import SectHireMe from "./components/Sect/HireMe";
+import SectHireMe from "./components/Sect/Hireme";
 import SectHandle from "./components/Sect/Handle";
 import Footer from "./components/Footer";
 // import { CgMenuHotdog } from "react-icons/cg";
