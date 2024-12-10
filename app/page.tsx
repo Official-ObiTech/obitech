@@ -126,7 +126,7 @@ export default function Home() {
 
         <section
           id="My Blog"
-          className=" dark:bg-slate-900 bg-slate-50  py-16  "
+          className=" dark:bg-slate-900 bg-slate-50  py-12  "
         >
           <SectBlog />
         </section>
