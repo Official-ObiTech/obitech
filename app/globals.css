@@ -109,7 +109,7 @@ body {
 
   /* Start Project  css */
   .pro_container {
-    @apply text-center space-y-10 container mx-auto py-24 relative;
+    @apply text-center space-y-10 container mx-auto py-24 relative lg:px-0 px-6;
   }
 
   .bg_gradient {
@@ -117,7 +117,7 @@ body {
   }
 
 .proj_item {
-  @apply h-full flex items-center justify-center border p-2 md:w-[250px] lg:w-[350px] w-[150px] border-gray-500 cursor-pointer;
+  @apply h-full flex items-center justify-center border p-2 md:w-[250px] lg:w-[350px] border-gray-500 cursor-pointer;
 }
 
   .color {
