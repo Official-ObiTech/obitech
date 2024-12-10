@@ -1,32 +1,53 @@
 import ReusableCard from "../Card";
+import {
+  SiPython,
+  SiJavascript,
+  SiMongodb,
+  SiNuxtdotjs,
+  SiHtml5,
+  SiCss3,
+  SiPostgresql,
+  SiFlask,
+  SiDjango,
+  SiTypescript,
+  SiGithub,
+} from "react-icons/si";
+import {
+  RiNextjsLine,
+  RiReactjsLine,
+  RiVuejsFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
 
 export default function Md() {
   const skills = [
-    { icon: "icom", text: "Python" },
-    { icon: "icom", text: "JavaScript" },
-    { icon: "icom", text: "Next Js" },
+    { icon: <SiPython />, text: "Python" },
+    { icon: <SiJavascript />, text: "JavaScript" },
+    { icon: <RiNextjsLine />, text: "Next Js" },
   ];
 
   const skills1 = [
-    { icon: "icom", text: "React Js" },
-    { icon: "icom", text: "Mongodb" },
-    { icon: "icom", text: "Vue Js" },
+    { icon: <RiReactjsLine />, text: "React Js" },
+    { icon: <SiMongodb />, text: "Mongodb" },
+    { icon: <RiVuejsFill />, text: "Vue Js" },
   ];
 
   const skills2 = [
-    { icon: "icom", text: "Nuxt Js" },
-    { icon: "icom", text: "html  " },
-    { icon: "icom", text: "Css" },
+    { icon: <SiNuxtdotjs />, text: "Nuxt Js" },
+    { icon: <SiHtml5 />, text: "html  " },
+    { icon: <SiCss3 />, text: "Css" },
   ];
   const skills3 = [
-    { icon: "icom", text: "Python" },
-    { icon: "icom", text: "JavaScript" },
-    { icon: "icom", text: "Next Js" },
+    { icon: <RiTailwindCssFill />, text: "TailwindCss" },
+    { icon: <SiPostgresql />, text: "Postgresql" },
+    { icon: <SiFlask />, text: "Flask" },
   ];
   const skills4 = [
-    { icon: "icom", text: "Python" },
-    { icon: "icom", text: "JavaScript" },
+    { icon: <SiDjango />, text: "Django " },
+    { icon: <SiTypescript />, text: "Typescript " },
+    { icon:   <SiGithub />, text: "Github " },
   ];
+
 
   return (
     <>

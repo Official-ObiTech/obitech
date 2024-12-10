@@ -9,6 +9,8 @@ import {
   SiPostgresql,
   SiFlask,
   SiDjango,
+  SiTypescript,
+  SiGithub
 } from "react-icons/si";
 import {
   RiNextjsLine,
@@ -39,7 +41,7 @@ export default function Lg() {
   ];
   const skills4 = [
     { icon: <SiDjango />, text: "Django " },
-    { icon: "icom", text: "JavaScript" },
+    { icon: <SiTypescript />, text: "Typescript " },
   ];
 
   return (
@@ -62,8 +64,10 @@ export default function Lg() {
 
       <div className="lg:flex justify-center items-center gap-6 hidden">
         <div className=" rounded-xl w-32 shadow-sm dark:bg-slate-800 bg-slate-300/25 py-6 text-xl font-semibold">
-          <span>icon</span>
-          <p>mysql</p>
+          <span>
+            <SiGithub />
+          </span>
+          <p>Github</p>
         </div>
       </div>
     </>

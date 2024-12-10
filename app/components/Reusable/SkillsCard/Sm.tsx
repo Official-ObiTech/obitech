@@ -1,37 +1,56 @@
 import ReusableCard from "../Card";
+import {
+  SiPython,
+  SiJavascript,
+  SiMongodb,
+  SiNuxtdotjs,
+  SiHtml5,
+  SiCss3,
+  SiPostgresql,
+  SiFlask,
+  SiDjango,
+  SiTypescript,
+  SiGithub,
+} from "react-icons/si";
+import {
+  RiNextjsLine,
+  RiReactjsLine,
+  RiVuejsFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
 
 export default function Sm() {
   const skills = [
-    { icon: "icom", text: "Python" },
-    { icon: "icom", text: "JavaScript" },
+    { icon: <SiPython />, text: "Python" },
+    { icon: <SiJavascript />, text: "JavaScript" },
   ];
 
   const skills1 = [
-    { icon: "icom", text: "Next Js" },
-    { icon: "icom", text: "React Js" },
+    { icon: <RiNextjsLine />, text: "Next Js" },
+    { icon: <RiReactjsLine />, text: "React Js" },
   ];
 
   const skills2 = [
-    { icon: "icom", text: "Mongodb" },
-    { icon: "icom", text: "Vue Js" },
+    { icon: <SiMongodb />, text: "Mongodb" },
+    { icon: <RiVuejsFill />, text: "Vue Js" },
   ];
 
   const skills3 = [
-    { icon: "icom", text: "Nuxt Js" },
-    { icon: "icom", text: "html  " },
+    { icon: <SiNuxtdotjs />, text: "Nuxt Js" },
+    { icon: <SiHtml5 />, text: "html  " },
   ];
 
   const skills4 = [
-    { icon: "icom", text: "Css" },
-    { icon: "icom", text: "Python" },
+    { icon: <SiCss3 />, text: "Css" },
+    { icon: <RiTailwindCssFill />, text: "TailwindCss" },
   ];
   const skills5 = [
-    { icon: "icom", text: "JavaScript" },
-    { icon: "icom", text: "Next Js" },
+    { icon: <SiPostgresql />, text: "Postgresql" },
+    { icon: <SiFlask />, text: "Flask" },
   ];
   const skills6 = [
-    { icon: "icom", text: "Python" },
-    { icon: "icom", text: "JavaScript" },
+    { icon: <SiDjango />, text: "Django " },
+    { icon: <SiTypescript />, text: "Typescript " },
   ];
   return (
     <>
@@ -65,8 +84,10 @@ export default function Sm() {
 
       <div className="flex justify-center items-center gap-6 md:hidden">
         <div className=" rounded-xl w-32 shadow-sm dark:bg-slate-800 bg-slate-300/25 py-6 text-xl font-semibold">
-          <span>icon</span>
-          <p>mysql</p>
+          <span>
+            <SiGithub />
+          </span>
+          <p>Github</p>
         </div>
       </div>
     </>
