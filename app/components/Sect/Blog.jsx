@@ -5,9 +5,9 @@ export default function Blog() {
   return (
     <>
       <div className="relative ">
-        <div className="absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 left-2" />
-        <div className="flex justify-between items-center  md:px-40 px-10 mx-auto container ">
-          <h1 className="md:text-6xl font-semibold">My Blog</h1>
+        <div className="absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 left-2 max-sm:hidden" />
+        <div className="md:flex justify-between items-center  md:px-40 px-10 mx-auto container ">
+          <h1 className="header">My Blog</h1>
           <p className="w-80 text-lg ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus earum
@@ -95,8 +95,6 @@ export default function Blog() {
               <p className="text-xs p-4 pt-0 ">24 May, 2024</p>
             </div>
           </div>
-
-     
         </div>
       </div>
     </>

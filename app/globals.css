@@ -113,7 +113,7 @@ body {
   }
 
   .bg_gradient {
-    @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 -right-40 md:block hidden;
+    @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 right-0 md:block hidden;
   }
 
 .proj_item {

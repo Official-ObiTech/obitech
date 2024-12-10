@@ -1,7 +1,7 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import ReusbleButton from "../Reusable/ReusbleButton";
-import React from "react";
 import { FiArrowDownRight } from "react-icons/fi";
+import ProLanguages from "../Reusable/Languages";
 
 export default function Projects() {
   const projectsLang = [
@@ -30,6 +30,7 @@ export default function Projects() {
       gradient: false,
     },
   ];
+
   return (
     <>
       <div className="pro_container  ">
@@ -44,27 +45,12 @@ export default function Projects() {
         <div className="relative w-full  lg:h-20 md:flex  items-center overflow-hidden font-semibold lg:text-xl ">
           <div className=" h-full   border border-gray-500  md:w-[250px] lg:w-[350px] hidden lg:block" />
 
-          {projectsLang.map((items, index) => (
-            <div
-              key={index}
-              className={`proj_item  ${items.gradient && "color"}`}
-            >
-              {items.text.split(" ").map((item, i) => (
-                <React.Fragment key={i}>
-                  {item}
-                  <br />
-                </React.Fragment>
-              ))}
-              {items.gradient && (
-                <div className="absolute top-0 left-0 bg-white z-10 w-3 h-3 rounded-full" />
-              )}
-            </div>
-          ))}
+          <ProLanguages languages={projectsLang} />
 
           <div className="h-full   border border-gray-500  md:w-[250px] lg:w-[350px]  hidden lg:block" />
         </div>
 
-        <div className="md:flex justify-between gap-6 lg:px-16 ">
+        <div className="md:flex justify-between gap-6 lg:px-16 dark:text-white">
           <Card
             className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4"
             shadow="sm"
