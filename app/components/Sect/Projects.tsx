@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, Image } from "@nextui-org/react";
+import { Card, CardBody, Image } from "@nextui-org/react";
 import ReusbleButton from "../Reusable/ReusbleButton";
 import React from "react";
 import { FiArrowDownRight } from "react-icons/fi";
