@@ -48,7 +48,11 @@ body {
 
   /* Normal header */
   .header {
-    @apply lg:text-5xl text-4xl font-semibold  py-6 flex gap-6 justify-center items-center;
+    @apply lg:text-6xl text-5xl font-semibold  py-6 flex gap-6 justify-center items-center;
+  }
+
+  .header2 {
+    @apply text-3xl font-semibold py-3;
   }
 
   /* Sub-header-text */
@@ -116,9 +120,9 @@ body {
     @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 right-0 md:block hidden;
   }
 
-.proj_item {
-  @apply h-full flex items-center justify-center border p-2 md:w-[250px] lg:w-[350px] border-gray-500 cursor-pointer;
-}
+  .proj_item {
+    @apply h-full flex items-center justify-center border p-2 md:w-[250px] lg:w-[350px] border-gray-500 cursor-pointer;
+  }
 
   .color {
     @apply relative bg-gradient-to-tl from-30% from-purple-600 to-90% to-pink-400 text-white;

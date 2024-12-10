@@ -6,27 +6,27 @@ import ProLanguages from "../Reusable/Languages";
 export default function Projects() {
   const projectsLang = [
     {
-      text: "IOS Development",
+      text: "IOS-Development",
       gradient: false,
     },
     {
-      text: "Website Development",
+      text: "Website-Development",
       gradient: true,
     },
     {
-      text: "Android Development",
+      text: "Android-Development",
       gradient: false,
     },
     {
-      text: "Backend Development",
+      text: "Backend-Development",
       gradient: false,
     },
     {
-      text: "Webflow Development",
+      text: "Webflow-Development",
       gradient: false,
     },
     {
-      text: "Website Development",
+      text: "Website-Development",
       gradient: false,
     },
   ];
@@ -50,9 +50,9 @@ export default function Projects() {
           <div className="h-full   border border-gray-500  md:w-[250px] lg:w-[350px]  hidden lg:block" />
         </div>
 
-        <div className="md:flex justify-between gap-6 lg:px-16 dark:text-white">
+        <div className="md:flex justify-between gap-6 lg:px-16 ">
           <Card
-            className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4"
+            className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4 dark:text-white"
             shadow="sm"
           >
             <CardBody>
@@ -86,7 +86,7 @@ export default function Projects() {
             </CardBody>
           </Card>
           <Card
-            className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4"
+            className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4 dark:text-white"
             shadow="sm"
           >
             <CardBody>

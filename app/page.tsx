@@ -133,7 +133,7 @@ export default function Home() {
 
         <section
           id="Contact Me"
-          className=" dark:bg-slate-900 bg-slate-50   md:px-24 px-8 md:py-24 py-8"
+          className=" dark:bg-slate-900 bg-slate-50 lg:px-20 px-8 md:py-24 py-8"
         >
           <SectHireMe />
         </section>

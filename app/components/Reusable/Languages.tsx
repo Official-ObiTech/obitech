@@ -17,7 +17,7 @@ const ProLanguages: React.FC<Lang> = ({ languages }) => {
           key={index}
           className={`proj_item ${language.gradient ? "color" : ""}`}
         >
-          {language.text.split(" ").map((word, i) => (
+          {language.text.split("-").map((word, i) => (
             <React.Fragment key={i}>
               {word}
               <br />

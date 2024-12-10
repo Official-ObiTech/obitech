@@ -6,9 +6,9 @@ export default function Blog() {
     <>
       <div className="relative ">
         <div className="absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 left-2 max-sm:hidden" />
-        <div className="md:flex justify-between items-center  md:px-40 px-10 mx-auto container ">
-          <h1 className="header">My Blog</h1>
-          <p className="w-80 text-lg ">
+        <div className="md:flex justify-between items-center  md:px-36 px-10 mx-auto container gap-10">
+          <h1 className="header flex w-full">My Blog</h1>
+          <p className="md:w-80 max-sm:text-center ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus earum
           </p>
@@ -17,7 +17,7 @@ export default function Blog() {
 
         <div className=" py-6 container mx-auto md:px-24 px-8 space-y-10 ">
           <div className="flex justify-between items-center ">
-            <ul className="flex items-center justify-center  gap-8">
+            <ul className="flex items-center justify-center  md:gap-8 gap-4 max-sm:text-sm">
               <li>
                 All topics <span>icon</span>
               </li>
@@ -28,7 +28,7 @@ export default function Blog() {
                 Last year <span>icon</span>
               </li>
             </ul>
-            <div>
+            <div className="max-sm:hidden">
               <input
                 type="search"
                 className="bg-transparent border-b outline-none"
