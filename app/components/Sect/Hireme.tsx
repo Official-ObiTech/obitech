@@ -1,4 +1,7 @@
 import ProLanguages from "../Reusable/Languages";
+import { Input } from "@nextui-org/react";
+import { MdAttachEmail } from "react-icons/md";
+import CustomInput from "../Reusable/CustomInput";
 
 export default function HireMe() {
   const hiremeLan = [
@@ -50,7 +53,7 @@ export default function HireMe() {
   return (
     <>
       <div className="space-y-6 relative  ">
-        <div className="absolute bg_blur w-80 h-80 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-72 right-0 max-sm:hidden" />
+        <div className="absolute bg_blur w-80 h-80 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-72 -right-20 max-sm:hidden" />
         <h1 className="header">Hire Me</h1>
 
         <div>
@@ -65,41 +68,59 @@ export default function HireMe() {
           <div className="relative w-full md:h-20 md:flex gap-2 items-center text-center font-semibold lg:text-xl ">
             <ProLanguages languages={hirePrice} />
           </div>
-        
         </div>
 
         <div>
           <p className="header2">Personal Data</p>
-          <div className="gap-10 space-y-4">
-            <input
-              type="text"
-              placeholder="first name"
-              className="bg-transparent border-b outline-none  "
-            />
-            <input
-              type="text"
-              placeholder="last name"
-              className="bg-transparent border-b outline-none  "
-            />
-            <input
-              type="email"
-              placeholder="email"
-              className="bg-transparent border-b outline-none  "
-            />
-            <div>
-              <input
-                type=""
-                placeholder="project details (optional)"
-                className="bg-transparent border-b outline-none  "
+          <div className="gap-10 space-y-4 dark:text-white lg:w-3/4">
+            <div className="md:flex gap-4">
+              <CustomInput
+                className="dark:text-white"
+                endContent={
+                  <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                }
+                label="First Name"
+                type="text"
+                variant="underlined"
               />
-              <span>icon</span>
+              <CustomInput
+                endContent={
+                  <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                }
+                label="Last Name"
+                type="text"
+                variant="underlined"
+              />
             </div>
+            <CustomInput
+              endContent={
+                <div className="pointer-events-none flex items-center">
+                  <span className="text-default-400 text-small">
+                    @gmail.com
+                  </span>
+                </div>
+              }
+              startContent={
+                <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+              }
+              label="Email Add"
+              type="email"
+              variant="underlined"
+            />
+            <CustomInput
+              endContent={
+                <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+              }
+              label=" Chose a File"
+              type="file"
+              variant="underlined"
+            />
           </div>
-          <p className="my-6">
+          <p className="my-6 text-xs text-gray-400">
             <span className="mr-3 ">
               <input type="checkbox" name="" id="" />
             </span>
-            i aree to te processin of my data in accordance wit te privacy
+            I agree to the processing of my data in accordance with the privacy
             policy
           </p>
         </div>

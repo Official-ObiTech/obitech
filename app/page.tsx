@@ -62,7 +62,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="main_container space-y-8 !bg-black  ">
+      <div className="main_container  ">
         <section className="about_bg ">
           <div className="name">
             <h1 className="md:text-3xl text-2xl font-bold">
@@ -126,7 +126,7 @@ export default function Home() {
 
         <section
           id="My Blog"
-          className=" dark:bg-slate-900 bg-slate-50 md:py-24 py-16  "
+          className=" dark:bg-slate-900 bg-slate-50  py-16  "
         >
           <SectBlog />
         </section>

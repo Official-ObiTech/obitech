@@ -1,11 +1,10 @@
 import Image from "next/image";
 
-
 export default function Blog() {
   return (
     <>
       <div className="relative ">
-        <div className="absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 left-2 max-sm:hidden" />
+        <div className="absolute bg_blur w-80 h-80 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 -left-10 max-sm:hidden" />
         <div className="md:flex justify-between items-center  md:px-36 px-10 mx-auto container gap-10">
           <h1 className="header flex w-full">My Blog</h1>
           <p className="md:w-80 max-sm:text-center ">
