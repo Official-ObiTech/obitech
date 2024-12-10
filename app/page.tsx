@@ -15,7 +15,9 @@ import SectBlog from "./components/Sect/Blog";
 import SectHireMe from "./components/Sect/HireMe";
 import SectHandle from "./components/Sect/Handle";
 import Footer from "./components/Footer";
-import { CgMenuHotdog } from "react-icons/cg";
+// import { CgMenuHotdog } from "react-icons/cg";
+// import { IoSunny } from "react-icons/io5";
+// import { GiMoonBats } from "react-icons/gi";
 
 export default function Home() {
   // To prevent SSR issues
@@ -56,6 +58,8 @@ export default function Home() {
     setTheme(event.target.checked ? "dark" : "light");
   };
 
+  // import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@nextui-org/dropdown";
+
   return (
     <>
       <div className="main_container space-y-8 !bg-black  ">
@@ -84,7 +88,7 @@ export default function Home() {
                 <ReusbleButton title={"Hire Me"} />
               </div>
               <div className="md:hidden">
-                <CgMenuHotdog size={24} />
+                {/* <CgMenuHotdog size={24} /> */}
               </div>
             </div>
           </div>

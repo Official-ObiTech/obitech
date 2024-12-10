@@ -20,7 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 @layer utilities {
   .main_container {
     @apply w-screen dark:bg-slate-900 bg-slate-200 text-gray-800 dark:text-gray-100 font-sans;
@@ -49,9 +48,8 @@ body {
 
   /* Normal header */
   .header {
-    @apply lg:text-5xl text-4xl font-semibold  py-6;
+    @apply lg:text-5xl text-4xl font-semibold  py-6 flex gap-6 justify-center items-center;
   }
- 
 
   /* Sub-header-text */
   .sub_header_text {
@@ -63,7 +61,7 @@ body {
     @apply flex items-center md:py-24 py-12 container mx-auto  gap-6;
   }
 
-   .header_text {
+  .header_text {
     @apply md:text-7xl text-4xl font-black tracking-widest font-serif py-6 md:py-8;
   }
 
@@ -86,33 +84,46 @@ body {
   }
 
   .Image_contanier {
-    @apply overflow-hidden rounded-full text-center lg:h-80 h-60 w-60 lg:w-80
+    @apply overflow-hidden rounded-full text-center lg:h-80 h-60 w-60 lg:w-80;
   }
 
   .text_contanier {
-    @apply md:absolute lg:top-[80px] lg:left-[360px] md:left-[160px] lg:text-5xl text-4xl font-semibold mt-10 md:mt-0
+    @apply md:absolute lg:top-[80px] lg:left-[360px] md:left-[160px] lg:text-5xl text-4xl font-semibold mt-10 md:mt-0;
   }
   /* End Experience css */
-
-  
 
   /* Start Skills css */
 
   .bg_blur_anime {
-  @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 md:-bottom-52 md:-left-52 -bottom-28 -left-32 hidden md:block 
+    @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 md:-bottom-52 md:-left-52 -bottom-28 -left-32 hidden md:block;
   }
 
   .grid_box_container {
-    @apply  rounded-xl  shadow-sm dark:bg-slate-800 bg-slate-300/25 p-2 text-xl font-semibold absolute bottom-0 right-40 lg:grid grid-cols-3 gap-2 hidden 
+    @apply rounded-xl  shadow-sm dark:bg-slate-800 bg-slate-300/25 p-2 text-xl font-semibold absolute bottom-0 right-40 lg:grid grid-cols-3 gap-2 hidden;
   }
   .grid_box_item {
-    @apply w-4 h-4 rounded-full dark:bg-gray-500 bg-gray-400 dark:hover:bg-gray-300 hover:bg-purple-600
+    @apply w-4 h-4 rounded-full dark:bg-gray-500 bg-gray-400 dark:hover:bg-gray-300 hover:bg-purple-600;
   }
 
   /* End Skilss css */
 
+  /* Start Project  css */
+  .pro_container {
+    @apply text-center space-y-10 container mx-auto py-24 relative;
+  }
 
+  .bg_gradient {
+    @apply absolute bg_blur w-96 h-96 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-44 -right-40 md:block hidden;
+  }
 
+.proj_item {
+  @apply h-full flex items-center justify-center border p-2 md:w-[250px] lg:w-[350px] w-[150px] border-gray-500 cursor-pointer;
+}
+
+  .color {
+    @apply relative bg-gradient-to-tl from-30% from-purple-600 to-90% to-pink-400 text-white;
+  }
+  /* End Project css */
 }
 
 /* The switch - the box around the slider */
