@@ -16,9 +16,7 @@ import SectHireMe from "./components/Sect/Hireme";
 import SectHandle from "./components/Sect/Handle";
 import Footer from "./components/Footer";
 import Dropdown from "./components/Reusable/m/Dropdown"
-// import { CgMenuHotdog } from "react-icons/cg";
-// import { IoSunny } from "react-icons/io5";
-// import { GiMoonBats } from "react-icons/gi";
+
 
 export default function Home() {
   // To prevent SSR issues
@@ -59,7 +57,7 @@ export default function Home() {
     setTheme(event.target.checked ? "dark" : "light");
   };
 
-  // import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@nextui-org/dropdown";
+
 
   return (
     <>
