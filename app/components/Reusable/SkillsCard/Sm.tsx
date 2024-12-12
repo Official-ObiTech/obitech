@@ -52,6 +52,8 @@ export default function Sm() {
     { icon: <SiDjango />, text: "Django " },
     { icon: <SiTypescript />, text: "Typescript " },
   ];
+  const skills7 = [{ icon: <SiGithub />, text: "Github " }];
+  
   return (
     <>
       <div className="flex justify-center items-center gap-6 md:hidden">
@@ -81,14 +83,8 @@ export default function Sm() {
       <div className="flex justify-center items-center gap-6 md:hidden">
         <ReusableCard skills={skills6} />
       </div>
-
       <div className="flex justify-center items-center gap-6 md:hidden">
-        <div className=" rounded-xl w-32 shadow-sm dark:bg-slate-800 bg-slate-300/25 py-6 text-xl font-semibold">
-          <span>
-            <SiGithub />
-          </span>
-          <p>Github</p>
-        </div>
+        <ReusableCard skills={skills7} />
       </div>
     </>
   );

@@ -10,7 +10,7 @@ import {
   SiFlask,
   SiDjango,
   SiTypescript,
-  SiGithub
+  SiGithub,
 } from "react-icons/si";
 import {
   RiNextjsLine,
@@ -43,6 +43,8 @@ export default function Lg() {
     { icon: <SiDjango />, text: "Django " },
     { icon: <SiTypescript />, text: "Typescript " },
   ];
+  const skills5 = [{ icon: <SiGithub />, text: "Github " }];
+
 
   return (
     <>
@@ -63,12 +65,7 @@ export default function Lg() {
       </div>
 
       <div className="lg:flex justify-center items-center gap-6 hidden">
-        <div className=" rounded-xl w-32 shadow-sm dark:bg-slate-800 bg-slate-300/25 py-6 text-xl font-semibold">
-          <span>
-            <SiGithub />
-          </span>
-          <p>Github</p>
-        </div>
+        <ReusableCard skills={skills5} />
       </div>
     </>
   );

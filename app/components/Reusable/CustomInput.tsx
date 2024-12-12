@@ -45,4 +45,4 @@ const CustomInput: React.FC<CustomInputType> = ({
   );
 };
 
-export default CustomInput
+export default CustomInput;

@@ -15,6 +15,7 @@ import SectBlog from "./components/Sect/Blog";
 import SectHireMe from "./components/Sect/Hireme";
 import SectHandle from "./components/Sect/Handle";
 import Footer from "./components/Footer";
+import Dropdown from "./components/Reusable/m/Dropdown"
 // import { CgMenuHotdog } from "react-icons/cg";
 // import { IoSunny } from "react-icons/io5";
 // import { GiMoonBats } from "react-icons/gi";
@@ -68,28 +69,26 @@ export default function Home() {
             <h1 className="md:text-3xl text-2xl font-bold">
               <Link href="/">ObiTech</Link>
             </h1>
-            <div className="flex gap-8 items-center">
-              <div className="hidden md:flex  ">
-                <MappedLinks links={links} />
+            <div className="lg:flex gap-8 items-center hidden">
+              <MappedLinks links={links} />
 
-                <div className="darkmode ">
-                  <label className="switch">
-                    <input
-                      type="checkbox"
-                      // Control the checkbox based on the current theme
-                      checked={theme === "dark"}
-                      // Toggle theme when checked
-                      onChange={handleCheckboxChange}
-                    />
-                    <span className="slider_header"></span>
-                  </label>
-                </div>
+              <div className="darkmode ">
+                <label className="switch">
+                  <input
+                    type="checkbox"
+                    // Control the checkbox based on the current theme
+                    checked={theme === "dark"}
+                    // Toggle theme when checked
+                    onChange={handleCheckboxChange}
+                  />
+                  <span className="slider_header"></span>
+                </label>
+              </div>
 
-                <ReusbleButton title={"Hire Me"} />
-              </div>
-              <div className="md:hidden">
-                {/* <CgMenuHotdog size={24} /> */}
-              </div>
+              <ReusbleButton title={"Hire Me"} />
+            </div>
+            <div className="lg:hidden">
+             <Dropdown />
             </div>
           </div>
 
