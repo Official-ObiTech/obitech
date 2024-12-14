@@ -2,7 +2,7 @@ import { Input } from "@nextui-org/react";
 
 
 interface CustomInputType {
-  label: string;
+  label?: string;
   type: string;
   variant: "underlined";
   isRequired?: boolean;

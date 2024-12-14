@@ -48,11 +48,11 @@ body {
 
   /* Normal header */
   .header {
-    @apply lg:text-6xl text-5xl font-semibold  py-6 flex gap-6 justify-center items-center;
+    @apply lg:text-6xl md:text-5xl text-3xl font-semibold  py-6 flex gap-6 justify-center items-center;
   }
 
   .header2 {
-    @apply text-3xl font-semibold py-3;
+    @apply md:text-3xl text-xl font-semibold py-3;
   }
 
   /* Sub-header-text */

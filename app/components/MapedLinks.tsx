@@ -19,7 +19,7 @@ const MapedLinks: React.FC<MapedLinksProps> = ({ links, className }) => {
       <ul className="flex gap-4">
         {links.map((link) => (
           <li key={link.href} className={clsx("link ", className)}>
-            <Link href={link.href}>{link.label}</Link>
+            <Link href={link.href} prefetch={true}>{link.label}</Link>
           </li>
         ))}
       </ul>

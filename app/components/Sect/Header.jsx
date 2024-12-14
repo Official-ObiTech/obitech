@@ -40,11 +40,11 @@ export default function Header() {
             />
           ))}
           <Image
-            src="/code.webp"
+            src="/obitech.png"
             alt="Obitech Image"
             width={100}
             height={100}
-            className="w-56 h-60 z-50"
+            className="w-full h-96 z-50 rounded-b-full"
           />
         </div>
       </div>

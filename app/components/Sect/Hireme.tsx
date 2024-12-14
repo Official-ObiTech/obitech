@@ -2,6 +2,7 @@ import ProLanguages from "../Reusable/Languages";
 
 import { MdAttachEmail } from "react-icons/md";
 import CustomInput from "../Reusable/CustomInput";
+import { FiArrowDownRight } from "react-icons/fi";
 
 export default function HireMe() {
   const hiremeLan = [
@@ -54,7 +55,12 @@ export default function HireMe() {
     <>
       <div className="space-y-6 relative  ">
         <div className="absolute bg_blur w-80 h-80 bg-gradient-to-bl from-purple-500 to-pink-300 -bottom-72 -right-20 max-sm:hidden" />
-        <h1 className="header">Hire Me</h1>
+        <h1 className="header">
+          Hire Me
+          <span>
+            <FiArrowDownRight className="text-pink-500 md:mt-6" />
+          </span>
+        </h1>
 
         <div>
           <p className="header2">Services</p>
@@ -111,7 +117,7 @@ export default function HireMe() {
               endContent={
                 <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
               }
-              label=" Chose a File"
+             
               type="file"
               variant="underlined"
             />

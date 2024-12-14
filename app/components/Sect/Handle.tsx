@@ -6,8 +6,7 @@ import {
   FaFacebook,
 } from "react-icons/fa6";
 
-import {FiArrowDownRight } from "react-icons/fi"
-
+import { FiArrowDownRight } from "react-icons/fi";
 
 export default function Handle() {
   return (
@@ -30,17 +29,17 @@ export default function Handle() {
             </span>
           </div>
           <p className="mt-12">
-            <FiArrowDownRight size={24} />
+            <FiArrowDownRight className="text-pink-500 md:mt-6 text-3xl" />
           </p>
         </div>
 
-        <div className="relative rounded-full h-60 w-60 border-gray-500 items-center lg:flex justify-center hidden -left-16 ">
+        <div className="relative rounded-full h-80 w-80 border-gray-500 items-center lg:flex justify-center hidden -left-16 ">
           <Image
-            src="/code.webp"
+            src="/obitech.png"
             alt="Obitech Image"
             width={100}
             height={100}
-            className=" w-full h-full  "
+            className="w-full h-full z-50 rounded-b-full"
           />
         </div>
       </div>
