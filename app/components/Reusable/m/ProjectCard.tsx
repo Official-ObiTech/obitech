@@ -22,6 +22,7 @@ const ProjectCard: React.FC<card> = ({ cardData }) => {
       <div className="md:grid grid-cols-2 gap-6">
         {cardData.map((card) => (
           <Card
+            key={card.id}
             className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4 dark:text-white"
             shadow="sm"
           >
