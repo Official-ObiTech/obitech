@@ -1,6 +1,5 @@
 import ProLanguages from "../Reusable/Languages";
 
-import { MdAttachEmail } from "react-icons/md";
 import CustomInput from "../Reusable/CustomInput";
 import { FiArrowDownRight } from "react-icons/fi";
 import { FaUserSecret } from "react-icons/fa6";

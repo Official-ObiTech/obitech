@@ -1,5 +1,4 @@
 import AllProjectCard from "@/app/components/Reusable/AllProjectCard";
-import { Card, CardBody, Image, Progress } from "@nextui-org/react";
 import React from "react";
 
 interface progressProps {

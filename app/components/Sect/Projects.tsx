@@ -1,4 +1,3 @@
-import { Card, CardBody, Image } from "@nextui-org/react";
 import ReusbleButton from "../Reusable/ReusbleButton";
 import { FiArrowDownRight } from "react-icons/fi";
 import ProLanguages from "../Reusable/Languages";
