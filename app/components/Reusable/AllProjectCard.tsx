@@ -1,9 +1,11 @@
+"use client";
+
 import ProjectCard from "./m/ProjectCard";
 
 export default function AllProjectCard() {
   const cardData = [
     {
-      id: 1,
+      id: '1',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -15,7 +17,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '2',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -27,7 +29,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '3',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -39,7 +41,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '4',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -51,7 +53,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '5',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -63,7 +65,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '6',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -75,7 +77,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '7',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -87,7 +89,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '8',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -99,7 +101,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '9',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -111,7 +113,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '10',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -123,7 +125,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '11',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -135,7 +137,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '12',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -147,7 +149,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '13',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -159,7 +161,7 @@ export default function AllProjectCard() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '14',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -172,7 +174,5 @@ export default function AllProjectCard() {
     },
   ];
 
-  return (
-    <ProjectCard cardData={cardData}/>
-  );
+  return <ProjectCard cardData={cardData} />;
 }

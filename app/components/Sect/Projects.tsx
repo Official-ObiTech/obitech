@@ -34,7 +34,7 @@ export default function Projects() {
 
   const cardData = [
     {
-      id: 1,
+      id: '1',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",
@@ -46,7 +46,7 @@ export default function Projects() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
     },
     {
-      id: 1,
+      id: '2',
       title: "Title",
       date: "2024-12-14",
       category: "Technology",

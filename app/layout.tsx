@@ -37,13 +37,15 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Providers>
-            <header className="about_bg !pb-4 sticky top-0 z-50">
-              <Navbar />
-            </header>
-            <main>{children}</main>
-            <footer className="dark:bg-slate-900 bg-slate-50 py-10 dark:text-white">
-              <Footer />
-            </footer>
+            <div className="flex flex-col">
+              <header className="about_bg !pb-4 sticky top-0 z-50 !right-0 !left-0 w-full">
+                <Navbar />
+              </header>
+              <main className="flex-grow">{children}</main>
+              <footer className="dark:bg-slate-900 bg-slate-50 py-10 dark:text-white static bottom-0">
+                <Footer />
+              </footer>
+            </div>
           </Providers>
         </body>
       </html>

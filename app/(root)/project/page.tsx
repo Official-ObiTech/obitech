@@ -1,3 +1,5 @@
+"use client";
+
 import AllProjectCard from "@/app/components/Reusable/AllProjectCard";
 import React from "react";
 
