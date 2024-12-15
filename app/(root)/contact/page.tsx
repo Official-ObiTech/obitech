@@ -9,19 +9,15 @@ const ContactPage = () => {
           <div className="dark:bg_gradient" />
           <div className="w-2/4">
             <h1 className="dark:text-gray-100 md:text-3xl text-2xl font-semibold">
-              Let's Build Something Awesome <span>Together</span>
+              Let&#39;s Build Something Awesome <span>Together</span>
             </h1>
             <p className="text-xs w-2/5">
-              You can alway send message or email, 
-              I will do be happy to help out.
-              Support hours 24/7
-             
+              You can alway send message or email, I will do be happy to help
+              out. Support hours 24/7
             </p>
           </div>
 
-          <Card>
-
-          </Card>
+          <Card></Card>
         </div>
       </section>
     </>
