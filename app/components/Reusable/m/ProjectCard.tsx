@@ -3,7 +3,7 @@ import { Card, CardBody, Image, Progress } from "@nextui-org/react";
 interface dataProps {
   id: number;
   title: string;
-  date: ReactNode;
+  date: React.ReactNode;
   category: string;
   image: string;
   alt: string;
