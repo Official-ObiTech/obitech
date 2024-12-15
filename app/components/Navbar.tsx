@@ -31,7 +31,9 @@ export default function Navbar() {
         <DarkModeToggle />
 
         {/* Hire Me Button */}
-        <ReusbleButton title={"Hire Me"} />
+        <Link href="/contact" prefetch>
+          <ReusbleButton title={"Hire Me"} />
+        </Link>
       </div>
 
       {/* Mobile Navigation */}

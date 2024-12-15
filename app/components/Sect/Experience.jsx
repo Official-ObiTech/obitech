@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ReusbleButton from "../Reusable/ReusbleButton";
 import { FiArrowDownRight } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Experience() {
   const stats = [
@@ -30,10 +31,13 @@ export default function Experience() {
             </span>
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus earum odit impedit sapiente aspernatur ad temporibus,
-            rem quasi quia tempora fugit molestias, vero eum iusto hic, fugiat
-            vitae labore dolores.
+            I am a highly motivated, tech-savvy Full-Stack Developer with years
+            of experience in creating, building, and launching web, desktop, and
+            mobile apps used by thousands of people. These apps improve user
+            experience and help grow businesses. My career in software
+            development started as a front-end engineer in 2022, and since then,
+            I have worked hard to develop my skills and move into a full-stack
+            developer role
           </p>
           <div className="flex justify-between items-center">
             {stats.map((stat, index) => (
@@ -48,8 +52,9 @@ export default function Experience() {
               </div>
             ))}
           </div>
-
-          <ReusbleButton title={"Hire Me "} className={"max-sm:w-full "} />
+          <Link href="/contact" prefetch>
+            <ReusbleButton title={"Hire Me "} className={"max-sm:w-full "} />
+          </Link>
         </div>
       </div>
     </>

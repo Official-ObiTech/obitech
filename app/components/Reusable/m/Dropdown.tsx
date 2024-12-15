@@ -138,8 +138,10 @@ export default function App() {
 
         <DropdownSection aria-label="Help & Feedback">
           <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-          <DropdownItem key="logout" className="p-0 mt-4">
-            <ReusbleButton title="Hire Me" className="w-full rounded" />
+          <DropdownItem key="hireMe" className="p-0 mt-4">
+            <Link href="/contact" prefetch>
+              <ReusbleButton title="Hire Me" className="w-full rounded" />
+            </Link>
           </DropdownItem>
         </DropdownSection>
       </DropdownMenu>
