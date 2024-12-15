@@ -24,7 +24,7 @@ const ProjectCard: React.FC<card> = ({ cardData }) => {
           <Card
             key={card.id}
             className="border-none bg-background/60 dark:bg-default-100/50 max-w-[600px] my-4 dark:text-white"
-            shadow="sm"
+            shadow="lg"
           >
             <CardBody>
               <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">

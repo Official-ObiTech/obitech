@@ -20,7 +20,7 @@ const ProjectPage = () => {
           <div className="dark:bg_gradient" />
           <div className="dark:text-white space-y-6">
             <div className="flex justify-between items-center">
-              <h1 className="md:text-3xl text-xl font-bold ">Projects</h1>
+              <h1 className="md:text-3xl text-2xl font-bold ">Projects</h1>
               <p>Jan, 2023</p>
             </div>
             <div className="flex gap-8">

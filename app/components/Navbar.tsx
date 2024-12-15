@@ -18,7 +18,9 @@ export default function Navbar() {
   return (
     <div className="name dark:text-white">
       <h1 className="md:text-3xl text-2xl font-bold">
-        <Link href="/">ObiTech</Link>
+        <Link href="/" prefetch>
+          ObiTech
+        </Link>
       </h1>
 
       {/* Desktop Navigation */}
