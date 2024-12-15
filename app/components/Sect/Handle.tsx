@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaXTwitter,
   FaLinkedin,
@@ -15,18 +16,27 @@ export default function Handle() {
         <div>
           <h1 className="header_text ">Follow Me</h1>
           <div className="flex space-x-6 pb-6">
-            <span className="rounded-full border p-1 w-10 h-10 text-center ">
+            <Link
+              href="https://x.com/o_obitech"
+              className="rounded-full border p-1 w-10 h-10 text-center cursor-pointer "
+            >
               <FaXTwitter className="w-full h-full p-1" />
-            </span>
-            <span className="rounded-full border p-1 w-10 h-10 text-center ">
+            </Link>
+            <Link
+              href="https://www.instagram.com/official_obitech/"
+              className="rounded-full border p-1 w-10 h-10 text-center cursor-pointer "
+            >
               <FaInstagram className="w-full h-full p-1" />
-            </span>
-            <span className="rounded-full border p-1 w-10 h-10 text-center ">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/officlal-obitech-7026a428b/"
+              className="rounded-full border p-1 w-10 h-10 text-center cursor-pointer"
+            >
               <FaLinkedin className="w-full h-full p-1" />
-            </span>
-            <span className="rounded-full border p-1 w-10 h-10 text-center ">
+            </Link>
+            <Link href="https://www.facebook.com" className="rounded-full border p-1 w-10 h-10 text-center cursor-pointer ">
               <FaFacebook className="w-full h-full p-1" />
-            </span>
+            </Link>
           </div>
           <p className="mt-12">
             <FiArrowDownRight className="text-pink-500 md:mt-6 text-3xl" />

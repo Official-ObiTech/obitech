@@ -1,30 +1,32 @@
+import Link from "next/link";
 import MappedLinks from "./MapedLinks";
 
 export default function Footer() {
-
-     const links = [
-       {
-         label: "Home",
-         href: "/",
-       },
-       {
-         label: "Projects",
-         href: "/projects",
-       },
-       {
-         label: "Blog",
-         href: "/blog",
-       },
-       {
-         label: "Contact",
-         href: "/contact",
-       },
-     ];
+  const links = [
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "Projects",
+      href: "/project",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
+    },
+  ];
   return (
     <>
       <div className="py-8 md:px-24 px-8 container mx-auto">
         <div className="flex justify-between items-center">
-          <h1 className="md:text-3xl text-2xl font-bold">ObiTech</h1>
+          <Link href="/" className="cursor-pointer">
+            <h1 className="md:text-3xl text-2xl font-bold">ObiTech</h1>
+          </Link>
 
           <MappedLinks links={links} className="hidden md:flex" />
         </div>

@@ -37,7 +37,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <Providers>
-            <header className="about_bg !pb-0">
+            <header className="about_bg !pb-4">
               <Navbar />
             </header>
             <main>{children}</main>

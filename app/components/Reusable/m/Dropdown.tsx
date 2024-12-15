@@ -28,7 +28,7 @@ export default function App() {
 
   const links: LinkType[] = [
     { label: "Home", href: "/" },
-    { label: "Projects", href: "/projects" },
+    { label: "Projects", href: "/project" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];

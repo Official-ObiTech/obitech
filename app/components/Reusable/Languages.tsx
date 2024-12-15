@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 interface ProLang {
   text: string;
@@ -24,7 +25,7 @@ const ProLanguages: React.FC<Lang> = ({ languages }) => {
             </React.Fragment>
           ))}
           {language.gradient && (
-            <div className="absolute top-0 left-0 bg-white z-10 w-3 h-3 rounded-full" />
+            <FaCheckCircle className="absolute top-1 left-1 z-10  " />
           )}
         </div>
       ))}

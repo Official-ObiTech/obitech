@@ -3,6 +3,9 @@ import ProLanguages from "../Reusable/Languages";
 import { MdAttachEmail } from "react-icons/md";
 import CustomInput from "../Reusable/CustomInput";
 import { FiArrowDownRight } from "react-icons/fi";
+import { FaUserSecret } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import { MdOutlineAttachFile } from "react-icons/md";
 
 export default function HireMe() {
   const hiremeLan = [
@@ -83,7 +86,7 @@ export default function HireMe() {
               <CustomInput
                 className="dark:text-white"
                 endContent={
-                  <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                  <FaUserSecret className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
                 }
                 label="First Name"
                 type="text"
@@ -91,7 +94,7 @@ export default function HireMe() {
               />
               <CustomInput
                 endContent={
-                  <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                  <FaUserSecret className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
                 }
                 label="Last Name"
                 type="text"
@@ -107,7 +110,7 @@ export default function HireMe() {
                 </div>
               }
               startContent={
-                <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                <IoIosMail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
               }
               label="Email Add"
               type="email"
@@ -115,9 +118,8 @@ export default function HireMe() {
             />
             <CustomInput
               endContent={
-                <MdAttachEmail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
+                <MdOutlineAttachFile className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
               }
-             
               type="file"
               variant="underlined"
             />
