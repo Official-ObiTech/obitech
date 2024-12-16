@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div className="name dark:text-white">
-      <h1 className="md:text-3xl text-2xl font-bold">
+      <h1 className="md:text-3xl text-2xl font-bold cursor-pointer">
         <Link href="/" prefetch>
           ObiTech
         </Link>

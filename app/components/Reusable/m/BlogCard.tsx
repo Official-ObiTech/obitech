@@ -22,7 +22,7 @@ const BlogCard: React.FC<card> = ({ cardData }) => {
     <>
       <div className="md:grid grid-cols-2 gap-6">
         {cardData.map((card) => (
-          <Card key={card.id} isFooterBlurred className="w-full h-[300px] text-gray-800 dark:text-white">
+          <Card key={card.id} isFooterBlurred className="w-full h-[300px] text-gray-800 dark:text-white my-4 bg-gray-400">
             {/* <Link href={`/blog/${card.id}`} prefetch> */}
               <CardHeader className="absolute z-10 top-1 flex-col items-start">
                 <p className="text-tiny text-white/60 uppercase font-bold">
