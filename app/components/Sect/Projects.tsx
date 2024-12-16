@@ -34,33 +34,36 @@ export default function Projects() {
 
   const cardData = [
     {
-      id: '1',
-      title: "Title",
-      date: "2024-12-14",
-      category: "Technology",
-      image: "https://nextui.org/images/album-cover.png",
+      id: "1",
+      title: "Master Builder",
+      date: "2023-10-1",
+      category: "NuxtJs, VueJs",
+      image: "app.skaldongroup.com.png",
       alt: "First project",
-      progressLabel: "Completed",
-      progressValue: 65,
+      progressLabel: "In Progress",
+      progressValue: 75,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
+        "This application helps manage various parts of the company’s daily operations, such as construction projects, supplies, inventory, payments, and audits. As a result, it improved construction efficiency by providing real-time tracking.",
+      to: "https://app.skaldongroup.com/",
     },
     {
-      id: '2',
-      title: "Title",
+      id: "2",
+      title: "Obitech Blog",
       date: "2024-12-14",
-      category: "Technology",
-      image: "https://nextui.org/images/album-cover.png",
-      alt: "First project",
+      category: "NextJs, ReactJs",
+      image: "Obitech Blog Website.png",
+      alt: "obitech-blog-website",
       progressLabel: "Completed",
-      progressValue: 65,
+      progressValue: 100,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae sapiente sit eum, distinctio aspernatur odio rerum enim magni quae neque commodi libero",
+        "I led the design of the database schema. By integrating Tailwind CSS, I made sure the website was fully responsive across devices. I incorporated Auth.js for secure authentication and AOS for smooth CSS animations....... ",
+      to: "https://obitech-blog-website.vercel.app/",
     },
   ];
 
+  // obitech-blog-backend.vercel.app/login
 
-  return (
+  https: return (
     <>
       <div className="pro_container  ">
         <div className="bg_gradient" />
@@ -81,8 +84,11 @@ export default function Projects() {
 
         <ProjectCard cardData={cardData} />
 
-        <Link href="/project" className="cursor-pointer">
-          <ReusbleButton title="See More Projects" className="max-sm:w-full " />
+        <Link href="/project" className="cursor-pointer ">
+          <ReusbleButton
+            title="See More Projects"
+            className="max-sm:w-full mt-8"
+          />
         </Link>
       </div>
     </>

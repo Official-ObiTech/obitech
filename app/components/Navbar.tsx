@@ -37,7 +37,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="lg:hidden">
+      <div className="lg:hidden cursor-pointer">
         <Dropdown />
       </div>
     </div>

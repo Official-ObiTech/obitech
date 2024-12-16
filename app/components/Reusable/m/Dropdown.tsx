@@ -10,7 +10,6 @@ import {
 } from "@nextui-org/react";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import ReusbleButton from "../ReusbleButton";
 import Link from "next/link";
 
@@ -20,9 +19,6 @@ interface LinkType {
 }
 
 export default function App() {
-  // To prevent SSR issues
-  const [mounted, setMounted] = useState(false);
-
   // Handle theme switching
   const { theme, setTheme } = useTheme();
 
@@ -32,14 +28,6 @@ export default function App() {
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
-
-  useEffect(() => {
-    // Ensure component is mounted before rendering
-    setMounted(true);
-  }, []);
-
-  // Prevent rendering until the component is mounted
-  if (!mounted) return null;
 
   return (
     <Dropdown
@@ -117,7 +105,7 @@ export default function App() {
           <DropdownItem
             key="theme"
             isReadOnly
-            className="cursor-default"
+            className="cursor-pointer"
             endContent={
               <select
                 className="z-10 outline-none w-16 py-0.5 rounded-md text-tiny group-data-[hover=true]:border-default-500 border-small border-default-300 dark:border-default-200 bg-transparent text-default-500"

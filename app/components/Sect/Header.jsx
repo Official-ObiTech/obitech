@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function Header() {
-
   const circles = [
     { size: "22rem", color: "bg-gray-600" },
     { size: "20rem", color: "bg-gray-500" },
@@ -21,13 +20,13 @@ export default function Header() {
             </span>
           </h1>
           <div>
-            <p className="ptag_container">
+            <div className="ptag_container">
               <div className="h-full w-1 bg-gray-400" />
               <span className="italic">
                 I am a full stack web developer with many years Experience, I
                 work Remotely from Abuja Nigeria
               </span>
-            </p>
+            </div>
           </div>
         </div>
 
