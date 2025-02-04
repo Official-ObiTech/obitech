@@ -67,10 +67,7 @@ export default function Experience() {
           <Link href="/contact" prefetch>
             <ReusbleButton title={"Hire Me "} className={"max-sm:w-full mt-6 "} />
           </Link>
-          <Link href="/contact" prefetch>
-            <ReusbleButton title={"Hire Me "} className={"max-sm:w-full mt-6 "} />
-          </Link>
-         
+     
       
       
         
