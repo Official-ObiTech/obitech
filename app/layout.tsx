@@ -48,7 +48,7 @@ export default function RootLayout({
               </footer>
               </footer>
               </footer>
-              </footer>
+     
      
       
          
