@@ -45,7 +45,7 @@ export default function RootLayout({
               <footer className="dark:bg-slate-900 bg-slate-50 py-10 dark:text-white static bottom-0">
                 <Footer />
               </footer>
-              </footer>
+   
    
  
      
