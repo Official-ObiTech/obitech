@@ -1,4 +1,18 @@
 "use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
+"use client";
 
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
