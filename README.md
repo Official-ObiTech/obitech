@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+My portfolio website and all the the interesting featuer with ractjs
+
+
+## Technologies Used
+- **Frontend:** React, Next.js, Tailwind CSS  
+- **Backend:** Node.js, Express  
+- **Database:** PostgreSQL  
+- **Tools:** Docker, GitHub Actions, Vercel  
+
 
 ## Getting Started
 
@@ -35,8 +43,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Technologies Used
-- **Frontend:** React, Next.js, Tailwind CSS  
-- **Backend:** Node.js, Express  
-- **Database:** PostgreSQL  
-- **Tools:** Docker, GitHub Actions, Vercel  
+
+![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react) 
+![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js)  
