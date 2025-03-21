@@ -24,7 +24,7 @@ import type { Metadata } from "next";
 import type { Metadata } from "next";
 import type { Metadata } from "next";
 import type { Metadata } from "next";
-import type { Metadata } from "next";
+mport type { Metadata } from "next";
 
 
 
