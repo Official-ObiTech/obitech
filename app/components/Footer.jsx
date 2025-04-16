@@ -2,7 +2,6 @@ import Link from "next/link";
 import MappedLinks from "./MapedLinks";
 import MappedLinks from "./MapedLinks";
 import MappedLinks from "./MapedLinks";
-import MappedLinks from "./MapedLinks";
 
 
 export default function Footer() {
