@@ -2,6 +2,7 @@ import Link from "next/link";
 import MappedLinks from "./MapedLinks";
 
 
+
 export default function Footer() {
   const links = [
     {
