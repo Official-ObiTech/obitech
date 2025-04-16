@@ -3,7 +3,7 @@ import MappedLinks from "./MapedLinks";
 import MappedLinks from "./MapedLinks";
 import MappedLinks from "./MapedLinks";
 import MappedLinks from "./MapedLinks";
-import MappedLinks from "./MapedLinks";
+
 
 export default function Footer() {
   const links = [
