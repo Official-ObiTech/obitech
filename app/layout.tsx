@@ -2,6 +2,24 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { Providers } from "./provider";
 import dynamic from "next/dynamic";
 
