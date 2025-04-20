@@ -5,7 +5,6 @@ import "./globals.css";
 
 
 
-
 import { Providers } from "./provider";
 import dynamic from "next/dynamic";
 
